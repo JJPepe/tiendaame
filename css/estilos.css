@@ -1,0 +1,1330 @@
+body /*Estilos para todo lo que se encuentre dentro del body*/
+{
+    margin : 0px; /*Margenes entre el contenido y el limite de la pagina*/
+    font-family: 'Open Sans Condensed', sans-serif; /*Fuente externa / Fuente para toda la pagina*/
+}
+
+#encabezado /*Estilos pa todo lo que se encuentra en el header*/
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    background: #F3F3F3;
+    text-align: center;
+    font-weight: bold;
+}
+
+#seccionLeyenda /*Estilos para el section donde se encuentra la leyenda*/
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    background: #FC5757; 
+}
+
+#leyenda /*Estilos para el h2 / la leyenda*/
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    text-align: center; 
+    font-size: 0.75rem; 
+    letter-spacing: 0.25rem; 
+    color: #FFFFFF; 
+    margin: 0px;
+}
+
+#barraNavegacion /*Estilos para el nav / barra con los enlaces*/
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    background: #E7E7E7;
+    display: block; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#navderecha /*Estilos para el nav / barra con los enlaces inicio de sesión y registro*/
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#navderecha a /*Estilos para los enlaces inicio de sesión y registro*/
+{
+    width: 100%;
+    padding: 0.85rem;
+}
+
+#navcentro /*Estilos para el espacio entre los enlaces*/
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#navcentro a /*Estilos para el espacio entre los enlaces*/
+{
+    min-width: 0rem;
+}
+
+#navizquierda /*Estilos para el nav / barra con los enlaces inicio, hombre, mujer, nosotros y contacto*/
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#navizquierda a /*Estilos para los enlaces inicio, hombre, mujer, nosotros y contacto*/
+{
+    min-width: 100%;
+    padding: 0.85rem;
+}
+
+#navizquierda a:hover /*Estilos para cuando se seleccionan los enlaces inicio de sesión y registro*/
+{    
+    padding: 0.85rem ;
+    background-color:#C4C3C1;
+}
+
+#navderecha a:hover /*Estilos para cuando se seleccionan los enlaces inicio, hombre, mujer, nosotros y contacto*/
+{
+    padding: 0.85rem ;
+    background-color: #C4C3C1;
+}
+
+#navderecha button:hover /*Estilos para cuando se seleccionan los enlaces inicio, hombre, mujer, nosotros y contacto*/
+{
+    padding: 0.85rem ;
+    background-color: #C4C3C1;
+    cursor: pointer;
+}
+
+.enlacesnav /*Estilos para los enlaces que estan en el nav*/
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    color: #4F4F4F;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.iniciosesion, .registro/*Estilos para los enlaces que estan en el nav*/
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    color: #4F4F4F;
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.registroBoton, .iniciosesionBoton
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    color: #4F4F4F;
+    background-color: transparent;
+    border: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    text-align: center;
+    min-width: 11.699rem;
+    padding:0.75rem;
+}
+
+.datosBoton
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+@media(min-width:768px){
+    .datosBoton
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.carritoBoton
+{
+    /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+    color: #4F4F4F;
+    background-color: transparent;
+    border: none;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    font-weight: bold;
+    text-align: center;
+    min-width: 6rem;
+    padding:0.75rem;
+}
+
+.formBotones
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.icono /*Estilo para los iconos del nav*/
+{
+    padding-right: 8px;
+}
+
+@media(min-width:768px) /*Para el ajuste de la pantalla / pantalla de movil / Minimizar la pantalla*/
+{
+    #barraNavegacion /*Estilos para el nav / barra con los enlaces*/
+    {
+        /*Fondo, colores, espacios, tamaño y alineacion establecidos en Figma*/
+        background: #E7E7E7;
+        height: 3rem;
+        display: flex; /*Crear una tabla*/
+        flex-direction: row;
+        grid-template-columns: 45% 33% 22%;/*asigna los espacios*/
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navderecha /*Estilos para el nav / barra con los enlaces inicio de sesión y registro*/
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #navderecha a /*Estilos para los enlaces inicio de sesión y registro*/
+    {
+        min-width: 10rem;
+    }
+
+    #navcentro /*Estilos para el espacio entre los enlaces*/
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+
+    #navcentro a /*Estilos para el espacio entre los enlaces*/
+    {
+        min-width: 0rem;
+    }
+
+    #navizquierda /*Estilos para el nav / barra con los enlaces inicio, hombre, mujer, nosotros y contacto*/
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #navizquierda a /*Estilos para los enlaces inicio, hombre, mujer, nosotros y contacto*/
+    {
+        min-width: 8rem;
+    }
+
+    .formBotones{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+#pie /*Estilos para el footer / navegacion final o pie de pagina*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F3F3F3;
+    /*padding: 2rem;*/
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#pieizq /*Estilos para la primera division dentro del footer*/
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#piecentro /*Estilos para la segunda division dentro del footer*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:1rem;
+    margin-bottom: 1rem;
+    width: 80%;
+    border-style: ridge;
+    border-left: 0rem;
+    border-right: 0rem;
+}
+
+#piederecho /*Estilos para la tercera division dentro del footer*/
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(min-width:768px)
+{
+    #pie /*Estilos para el footer / navegacion final o pie de pagina*/
+    {
+        display: flex;
+        flex-direction: row;
+        grid-template-columns: repeat(3,1fr);
+        background-color: #F3F3F3;
+        padding: 2rem;
+        margin-bottom: 0;
+    }
+
+    .pieizq  /*Estilos para la primera division dentro del footer*/
+    {
+        width: 33.33%;
+        text-align: center;
+        height: 7rem;
+        width: 33.33%;
+        border-style: ridge;
+        border-bottom: none;
+        border-left: none;
+        border-top: none;
+    }
+
+    #piecentro /*Estilos para la segunda division dentro del footer*/
+    {    
+        width: 33%; 
+        border: none;       
+    }
+
+    #piederecho /*Estilos para la rercera division dentro del footer*/
+    {
+        /*display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;*/
+        height: 7rem;
+        width: 33.33%;
+        border-style: ridge;
+        border-bottom: none;
+        border-right: none;
+        border-top: none;
+    }
+}
+
+#pieleyenda /*Estilos para el h2 de la primera division del footer*/
+{    
+    text-align: center; 
+    font-size: 0.80rem; 
+    letter-spacing: 0.20rem; 
+    color: #FC5757;
+    margin: 0px;    
+}
+
+.pietextocentro /*Estilos para el h3 de la segunda division del footer*/
+{
+    color: #4F4F4F;
+    font-size: 0.87rem;
+    letter-spacing: 0.20rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0.75rem 0rem 0.25rem 0rem;
+}
+
+.pietextoderecho /*Estilos para el h3 de la tercera division del footer*/
+{
+    color: #4F4F4F;
+    font-size: 0.87rem;
+    letter-spacing: 0.20rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0rem;
+}
+
+.pieparrafo  /*Estilos para el parrafo de la segunda division del footer*/
+{
+    color: #4F4F4F;
+    font-size: 0.87rem;
+    letter-spacing: 0.20rem;
+    font-weight: light;
+    text-align: center;  
+}
+
+/*---------------------------ESTILOS DEFINIDOS PARA LA PAGINA NOSOTROS---------------------------*/
+
+.contenidoNosotros
+{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.apartadoNosotros
+{
+    display: flex;
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+}
+
+.fraccionNosotrosTxt
+{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.fraccionNosotrosImg, .fraccionMisionImg
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.nosotrosImg 
+{
+    display: flex;
+    border-radius: 5%;
+    width: 90%;
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.nosotros /*Estilo para el título "Nosotros"*/
+{ 
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.50rem;
+    color: #fc5757;
+}
+
+.textoNosotros 
+{
+    /*Estilo para el texto "Nosotros"*/
+    /*Fixed, se queda flotando a donde bajes o subas "*/
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    margin-right: 0;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #4f4f4f;
+}
+  
+.nosotrosImg:hover 
+{
+    transform: scale(1.03);
+}
+
+.mision 
+{
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.50rem;
+    color: #fc5757;
+}
+
+.textoMision 
+{
+    /*Estilo para el texto "Mision"*/
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    color: #4f4f4f;
+}
+
+.textoMision 
+{
+    /*Estilo para el texto "Mision"*/
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    color: #4f4f4f;
+}
+
+.line 
+{
+    /*Linea de división*/
+    width: 100%;
+    min-height: 1px;
+    margin-left: 0px;
+    margin-top: 1rem;
+    border-style: ridge;
+    border-width: 1px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-color: #BFBFBF;
+}
+
+@keyframes animateText {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes showText {
+    0% {
+      width: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+    50% {
+      width: 100%;
+      transform: translateX(12%);
+    }
+    100% {
+      width: 0;
+      left: 100%;
+      transform: translateX(100%);
+    }
+  }
+
+@media(min-width:768px)
+{
+    .contenidoNosotros
+    {
+        margin: auto;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .apartadoNosotros
+    {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        flex-direction: row;
+    }
+    
+    .fraccionNosotrosTxt
+    {
+        display: flex;
+        flex-direction: row;
+        width: 60%;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fraccionNosotrosImg, .fraccionMisionImg
+    {
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+    }
+    
+    .nosotrosImg 
+    {
+        border-radius: 5%;
+        width: 90%;
+        margin: 2rem;
+        transition: transform 0.2s;
+    }
+    
+    .nosotros /*Estilo para el título "Nosotros"*/
+    { 
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.50rem;
+        color: #fc5757;
+    }
+    
+    .textoNosotros 
+    {
+        /*Estilo para el texto "Nosotros"*/
+        /*Fixed, se queda flotando a donde bajes o subas "*/
+        font-family: 'Nunito', sans-serif;
+        width: 90%;
+        margin-right: 0;
+        text-align: left;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 2.5px;
+        color: #4f4f4f;
+    }
+      
+    .nosotrosImg:hover 
+    {
+        transform: scale(1.03);
+    }
+    
+    .mision 
+    {
+        text-align: right;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        font-size: 24px;
+        letter-spacing: 0.50rem;
+        color: #fc5757;
+    }
+    
+    .textoMision 
+    {
+        /*Estilo para el texto "Mision"*/
+        font-family: 'Nunito', sans-serif;
+        text-align: right;
+        width: 100%;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 2.5px;
+        color: #4f4f4f;
+    }
+    
+    .line 
+    {
+        /*Linea de división*/
+        width: 100%;
+        min-height: 1px;
+        margin-left: 0px;
+        margin-top: 1rem;
+        border-style: ridge;
+        border-width: 1px;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-color: #BFBFBF;
+    }
+    
+    @keyframes animateText {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes showText {
+        0% {
+          width: 0;
+          left: 0;
+          transform: translateX(0);
+        }
+        50% {
+          width: 100%;
+          transform: translateX(12%);
+        }
+        100% {
+          width: 0;
+          left: 100%;
+          transform: translateX(100%);
+        }
+      }    
+}
+
+/*---------------------------ESTILOS DEFINIDOS PARA LA PAGINA CONTACTOS---------------------------*/
+
+.fraccionContacto
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.titulo 
+{ 
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25em;
+    margin: 2rem 0rem 1rem 0rem;
+    color: #fc5757;
+  }
+
+i
+{
+    color: #4F4F4F;
+    transition: 0.6s ease;
+    padding: 1rem;
+}
+  
+#fb:hover,  #inst:hover,  #wsp:hover 
+{
+    cursor: pointer;
+    color:  #FC5757;
+    transform: translateY(-6px);
+}
+  
+.text
+{
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2.5px;
+    justify-content: center;
+    color: #4f4f4f;
+}
+  
+iframe 
+{
+    width: 100%;
+}
+
+
+.market 
+{
+    width: 2rem;
+    padding: 0;
+    margin: 0;
+    color: #fc5757;
+}
+  
+
+.titulo2 
+{
+    width: 100%;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.25em;
+    color: #fc5757;
+}
+
+
+.text2
+{
+    width: 70%;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 2.5px;
+    justify-content: center;
+    color: #4f4f4f;
+}
+
+.fraccionUbicacion, .fraccionUbicacion2
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+@media(min-width:768px)
+{
+    .fraccionContacto
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 3rem;
+        padding-top: 1rem;
+    }
+
+    .titulo 
+    { 
+        font-family: 'Nunito', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.25em;
+        margin: 4rem 0rem 2rem 0rem;
+        color: #fc5757;
+    }
+
+    i
+    {
+        color: #4F4F4F;
+        transition: 0.6s ease;
+        padding: 1rem;
+    }
+    
+    #fb:hover,  #inst:hover,  #wsp:hover
+    {
+        cursor: pointer;
+        color:  #FC5757;
+        transform: translateY(-6px);
+    }
+    
+    .text
+    {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 300;
+        font-size: 22px;
+        line-height: 22px;
+        letter-spacing: 2.5px;
+        justify-content: center;
+        color: #4f4f4f;
+    }
+    
+    iframe 
+    {
+        width: 100%;
+        margin: auto;
+        position:static;
+    }
+
+
+    .market 
+    {
+        width: 2rem;
+        padding: 0;
+        margin: 0;
+        color: #fc5757;
+    }
+    
+
+    .titulo2 
+    {
+        width: 100%;
+        font-family: Nunito;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.25em;
+        color: #fc5757;
+    }
+
+
+    .text2
+    {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 22px;
+        letter-spacing: 2.5px;
+        justify-content: center;
+        color: #4f4f4f;
+    }
+
+    .fraccionUbicacion, .fraccionUbicacion2
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .fraccionUbicacion
+    {
+        padding: 2rem 0rem;
+    }
+
+}  
+
+/*---------------------------ESTILOS DEFINIDOS PARA LA PAGINA HOMBRE Y MUJER---------------------------*/
+
+
+/*ESTILOS PARA LA SECCIÓN EN LA QUE SE ENCUENTRA EL GENERO*/
+.seccionNombreGenero
+{
+    display: flex;
+    width: 100%;
+    height: 40px;
+    background-color: #ABABAB;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.seccionNombreGenero h1
+{
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+}
+
+@media(min-width:768px)
+{
+    .seccionNombreGenero
+    {
+        display: flex;
+        width: 100%;
+        height: 70px;
+        background-color: #ABABAB;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .seccionNombreGenero h1
+    {
+        color: #FFFFFF;
+        font-size: 40px;
+        font-weight: lighter;
+        letter-spacing: 6px;
+    }
+}
+
+/*ESTILOS PARA EL ESPACIO EN DONDE SE MUESTRAN LOS ARTICULOS*/
+.contenedorArticulos
+{
+    font-family: 'Nunito', sans-serif;
+    color: #4F4F4F;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.sub-contenedorArticulos, .precios
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.tallas, .div-color-articulo
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.fraccionArticulo, .fraccionArticuloImg
+{
+    width: 50%;
+    margin: 10px;
+}
+
+.fraccionArticulo
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.imgArticulo
+{
+    width: 100%;
+    height: 100%;
+}
+
+.precios
+{
+    align-items: left;
+}
+
+.div-color-articulo
+{
+    display: flex;
+    width: 80%;
+    margin: 13px 0px;
+    justify-content: left;
+    align-items: center;
+}
+
+.tallas
+{
+    margin: 5px 0px;
+    text-align: center;
+    align-items: center;
+}
+
+.tallas label
+{
+    margin-right: 10px;
+    width: 1rem;
+    padding: 5px 5px 5px 0px;
+    border-radius: 25%;
+    font-size: 8px;
+    border-style: solid;
+    background-color: #F8F8F8;
+    border-color: #F3F3F3;
+    border-width: 1px;
+}
+
+.tallas input[type=radio]
+{
+    width: 10px;
+    margin:0;
+    margin-left: 2px;
+    text-align: center;
+}
+
+.tallas input[type=radio]:hover, .tallas label:hover
+{
+    cursor: pointer;
+}
+
+.articulo
+{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre-articulo
+{
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.sub-categoria-articulo, .categoria-articulo
+{
+    font-size: 10px;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.precio-articulo, .descripcion-articulo, .talla-articulo
+{
+    font-size: 9px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.color-articulo
+{
+    width: 35%;
+    font-size: 9px;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.precio-real
+{
+    font-size: 10px;
+    color: #858585;
+    margin: 5px 20px 0px 0px;
+    text-decoration:line-through;
+}
+
+.precio-descuento
+{
+    font-size: 10px;
+    width: 30%;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #ABABAB;
+    border-radius: 7%;
+    margin: 5px 20px 0px 0px;
+}
+
+.precio-temporada
+{
+    font-size: 10px;
+    width: 30%;
+    color: #FFFFFF;   
+    text-align: center;
+    background-color: #4F4F4F;
+    border-radius: 7%;
+    margin: 5px 20px 0px 0px;
+}
+
+.precio-total
+{
+    font-size: 14px;
+    color: #FC5757;  
+    text-align: left;
+    margin:0px 20px 0px 0px;
+}
+
+.precio-total-original
+{
+    font-size: 14px;
+    color: #4F4F4F;  
+    text-align: left;
+    margin:0px 20px 0px 0px;
+}
+
+.descripcion
+{
+    font-size: 10px;
+    margin: 0;
+}
+
+.color
+{
+    width: 75%;
+    font-size: 10px;
+    margin: 0;
+}
+
+.añadirCarrito button
+{
+    width: 90%;
+    height: 2rem;
+    font-size: 12px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    word-spacing: 1px;
+    color: #A1A1A1;
+    background-color: #F3F3F3;
+    border-style: none;
+    margin: 0;
+}
+
+.añadirCarrito button:hover, .añadirCarrito a:hover
+{
+    cursor: pointer;
+    color:#FFFFFF;
+    background-color: #4F4F4F;
+}
+
+.sin-precio-des
+{
+    background-color: transparent;
+    color: none;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+@media(min-width:768px)
+{
+
+    .contenedorArticulos
+    {
+        font-family: 'Nunito', sans-serif;
+        color: #4F4F4F;
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sub-contenedorArticulos
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imgArticulo
+    {
+        width: 100%;
+    }
+
+
+    .nombre-articulo
+    {
+        font-size: 16px;
+        letter-spacing: 2px;
+    }
+
+    .sub-categoria-articulo, .categoria-articulo
+    {
+        font-size: 14px;
+        text-transform: lowercase;
+        text-transform: capitalize;
+    }
+
+    .precio-articulo, .descripcion-articulo, .talla-articulo, .color-articulo
+    {
+        font-size: 13px;
+        letter-spacing: 1.2px;
+    }
+
+    .precios, .tallas, .div-color-articulo
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .precios
+    {
+        align-items: center;
+    }
+
+    .descripcion
+    {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .color
+    {
+        width: 75%;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .tallas label
+    {
+        width: 100%;
+        margin-right: 10px;
+        padding: 5px 5px 5px 0px;
+        border-radius: 25%;
+        font-size: 12px;
+        border-style: solid;
+        background-color: #F8F8F8;
+        border-color: #F3F3F3;
+        border-width: 1px;
+    }
+
+    .tallas input[type=radio]
+    {
+        width: 20px;
+        margin: 0;
+    }
+
+    .añadirCarrito button
+    {
+        width: 100%;
+        height: 3rem;
+        font-size: 12px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold;
+        text-transform: uppercase;
+        word-spacing: 1px;
+        color: #A1A1A1;
+        background-color: #F3F3F3;
+        border-style: none;
+        margin-top: 3rem;
+        margin-bottom: 6px;
+    }
+
+    .articulo
+    {
+        width: 100%;
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .precio-real
+    {
+        font-size: 14px;
+        color: #858585;
+        text-align: center;
+        margin: 5px 20px 0px 0px;
+        text-decoration:line-through;
+    }
+    
+    .precio-descuento
+    {
+        font-size: 14px;
+        width: 20%;
+        color: #FFFFFF;
+        text-align: center;
+        background-color: #ABABAB;
+        border-radius: 7%;
+        margin: 5px 20px 0px 0px;
+    }
+    
+    .precio-temporada
+    {
+        font-size: 14px;
+        width: 20%;
+        color: #FFFFFF;   
+        text-align: center;
+        background-color: #4F4F4F;
+        border-radius: 7%;
+        margin: 5px 20px 0px 0px;
+    }
+    .precio-total
+    {
+        font-size: 20px;
+        color: #FC5757;  
+        text-align: left;
+        margin:0px 20px 0px 0px;
+    }
+
+    .precio-total-original
+    {
+        font-size: 20px;
+    }
+    
+    .sin-precio-des
+    {
+        background-color: transparent;
+        color: none;
+    }
+}
+
+.subcontenedorArticulosCategorias{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+

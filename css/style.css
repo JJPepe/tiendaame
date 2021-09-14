@@ -1,0 +1,896 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    
+}
+
+body{    
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    background-image: url(../imagenes/formulario/fondo.png);
+}
+
+
+
+
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 4.5rem;
+    font-size: 1.2rem;
+    display:flex;  
+    justify-content: center; 
+    background-color: #F3F3F3;
+}
+
+
+
+.imagenlogo{
+    width: 100%;
+    padding: 0.5rem;
+    /*float: left;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenlogo img{
+    max-height: 40px;
+}
+
+.cerrarsesion{
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cerrar{
+    padding: 0.5rem; 
+    text-align: center;  
+}
+
+#cerrar a{
+    text-decoration: none;
+    color: #4F4F4F;
+}
+
+hr {
+    position: fixed;
+    top:4.5rem;
+    align-content: center;
+    width: 100%;
+    height: 0.5rem;
+    background-color: rgb(255, 70, 70);
+}
+
+/*BARRA LATERAL ANIMADA*/
+.barralateral{
+    display: block;
+    position: fixed;
+    top: 5.1rem;
+    width: 0rem;
+    height: 100%;
+    text-align: center;
+    font-size: 1.08rem;
+    background-color: #E7E7E7;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+#checar:checked ~ .barralateral{
+    width: 20rem;
+}
+
+@media(min-width:768px){
+    .barralateral{
+        display: block;
+        position:fixed;
+        top: 5.1rem;
+        width: 20rem;
+        height: 100%;
+        text-align: center;
+        font-size: 1.08rem;
+        background-color: #E7E7E7;        
+    }    
+}
+
+#checar{
+    display: none;
+}
+
+.barramenu{
+    display: flex;
+    align-items: center;    
+}
+
+.barramenu svg{
+    cursor: pointer;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #A0A0A0;
+}
+
+.lista{
+    text-align: left;
+    list-style: none; 
+}
+
+.lista li{    
+    padding: 1rem 1rem 1rem 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;    
+    border-bottom: white 0.5px solid;
+}
+
+.lista-botones{
+    color: #A0A0A0;
+    text-decoration: none;
+}
+
+.lista li:hover{
+    background-color: rgb(255, 70, 70);
+    color:white;
+    transition: 300ms;
+}
+
+
+/**MENU RESPONSIVE**/
+
+main{
+    position:static;
+    padding-top: 3rem;
+}
+
+@media(min-width:768px){
+    main{ 
+        
+        position:static;  
+    }
+}
+
+.resumen{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 3rem;
+    justify-items: center;
+}
+
+/*
+.resumen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+}*/
+
+/** GRID RESUMEN **/
+
+@media(min-width:768px){
+
+    .resumen{
+        display: grid; /*HABILITA GRID*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*DEFINE EL NUMERO DE COLUMNAS POR FRACCION DE ANCHO*/
+        column-gap: 1rem; /*SEPARA LAS COLUMNAS*/
+        justify-items: center; /*PARA CENTRAR*/  
+        padding: 0 10rem 0 10rem; 
+    }
+
+}
+
+.resumen-clientes{
+    height: 17rem;
+    width: 17rem;
+    background-color: #AED6F1;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+    
+}
+
+
+
+
+.resumen-articulos{
+    height: 17rem;
+    width: 17rem;
+    background-color: #EBDEF0;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+
+.resumen-facturas{
+    height: 17rem;
+    width: 17rem;
+    background-color: #F9E79F;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+
+
+.resumen-ventas{
+    height: 17rem;
+    width: 17rem;
+    background-color: #A3E4D7;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 4s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+table{
+    animation-duration: 1s;
+    animation-name: aparecer;
+    animation-iteration-count:initial;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+
+main h2{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+
+.contenedor-tarjetas{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    align-items: center;
+}
+
+/**GRID TARJETAS**/
+
+@media(min-width:768px){
+    .contenedor-tarjetas{
+        display: grid; /*HABILITA GRID*/
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*DEFINE EL NUMERO DE COLUMNAS POR FRACCION DE ANCHO*/
+        column-gap: 2rem; /*SEPARA LAS COLUMNAS*/
+        justify-items: center; /*PARA CENTRAR*/  
+        padding: 10rem 10rem 0rem 10rem; 
+    }
+}
+
+
+
+.contenedor-tarjetas a{
+    text-decoration: none;
+}
+
+.tarjetas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #A0A0A0;
+    color: white;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 5%;    
+}
+
+.tarjetas:hover{
+    background-color:rgb(255, 70, 70);
+    transition: 300ms;
+}
+
+.mainAdm-contenedor{    /*CAMBIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
+    margin: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.tabla-encabezado{
+    text-align: center;
+    background-color:rgb(255, 70, 70);
+    color: white;
+}
+
+
+.tablanoedicion{
+    background-color:#E7E7E7;
+    padding-left: 1rem;
+}
+
+.tabla-edicion{
+    text-align: center;
+    background-color:#E7E7E7;
+}
+
+.tabla-edicion:hover{
+    background-color:#A0A0A0;
+}
+
+.tabla-edicion svg{
+    cursor: pointer;
+}
+
+main table{
+    width: 100%;
+}
+
+.main-h3{
+    margin-left: 1rem;
+}
+
+.botonnuevo{
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.nuevoreg
+{
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 1rem;
+    font-size: 13px;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    color: white;
+    background-color:#A0A0A0;
+    border-width: 3px;
+    border-radius: 4px;
+    cursor: pointer;    
+    border-style: none;
+}
+
+.nuevoreg:hover{
+    background-color: rgb(255, 70, 70);    
+}
+
+
+.formAltaAdmin{
+    margin: 1rem;
+    text-align: left;
+}
+
+input{
+    border-width: 2px;
+    border-radius: 6px;
+    font-size: 1.5rem;
+}
+
+
+input:focus{
+    border-color: rgb(255, 70, 70);
+}
+
+label{
+    color: rgb(255, 70, 70);
+    font-weight: bold;
+}
+
+#divaparece{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 1s linear;
+    position: absolute;
+    /*width: 100%;*/
+    display: flex;
+    justify-content: center;
+}
+
+#nuevoadmin:checked ~ #divaparece{
+    visibility: visible;
+    opacity: 1;
+    position:static;
+}
+
+#nuevoadmin{
+    display: none;
+}
+
+.botonEliEdi{
+    border-style: none;
+    background-color: white;
+}
+
+.botonEliEdi:hover{
+    background-color:#E7E7E7;
+}
+
+.basura{
+    visibility:hidden;
+    width: 0rem;
+}
+
+.ponerBelloAlPapu{
+    width: 100%;
+    max-width: 25rem;
+    height: 40rem;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color:#E7E7E7;
+    background-color:#E7E7E7;
+    box-shadow: 0rem 1rem 1rem #4F4F4F;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms;
+    border-radius: 1rem;
+    
+}
+
+/*
+@media(min-width:400px){
+
+    .ponerBelloAlPapu{
+        width: 100%;
+        max-width: 40rem;
+        height: 40rem;
+        position: fixed;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:black;
+        background-color:#A0A0A0;
+        box-shadow: 0rem 1rem 1rem #4F4F4F;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 300ms;
+        border-radius: 1rem;
+        
+    }
+
+}
+
+@media(min-width:768px){
+
+    .ponerBelloAlPapu{
+        width: 100%;
+        max-width: 90rem;
+        height: 40rem;
+        position: fixed;
+        display: flex;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        color:black;
+        background-color:#A0A0A0;
+        box-shadow: 0rem 1rem 1rem #4F4F4F;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 300ms;
+        border-radius: 1rem;
+        
+    }
+
+}*/
+
+
+.ponerBelloAlPapu:target{
+    visibility: visible;
+    opacity: 1;
+}
+
+.abreAlPapu{
+    text-decoration: none;
+}
+
+.cierraAlPapu{
+    width: 0.7rem;
+    height: 0.7rem;
+    position: absolute;
+    right: -2rem;
+    top: -2rem;
+    background-color:black;
+    color: white;
+    border-radius: 50%;
+    line-height: 0.3rem;
+    padding: 2rem;
+    text-decoration: none;
+
+}
+
+.mainActualizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.actualizarAdmin{                   /*PARA DAR ESTILO A LOS FORMULARIOS*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    margin: 1rem;           
+    color:#E7E7E7;
+    background-color:#E7E7E7;
+    box-shadow: 0rem 1rem 1rem #4F4F4F;
+    border-radius: 1rem;
+    padding: 1rem;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+}
+
+.elPapu{                   /*PARA DAR ESTILO A LOS FORMULARIOS*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 90%;
+    margin: 1rem;           
+    color:black;
+    background-color:#E7E7E7;
+    box-shadow: 0rem 1rem 1rem #4F4F4F;
+    border-radius: 1rem;
+    padding: 1rem;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+}
+
+.elPapu h3{
+    color:rgb(255, 70, 70);
+}
+
+.elPapu form{
+    width: 100%;
+    text-align: center;
+}
+
+.elPapuContenido{
+    display: flex;
+    flex-direction: column;
+    justify-content: end; 
+    margin-bottom: 1rem; 
+    border:ridge;
+}
+
+
+@media(min-width:768px){
+    .elPapuContenido{
+        display: flex;
+        flex-direction: row;
+        justify-content: end; 
+        margin-bottom: 1rem; 
+        border:ridge;
+    }
+
+    .elPapuContenido input{
+        max-width: 12rem;
+    }
+}
+
+.tituloDatos{
+    text-align: left;
+    min-width: 8rem;
+    font-weight: bold;
+    margin-left:1rem;
+}
+
+.margen{
+    text-align: left;
+    min-width: 8rem;
+    margin-left:1rem;
+}
+
+@media(min-width:768px){
+    .actualizarAdmin{                   /*PARA DAR ESTILO A LOS FORMULARIOS*/
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+        margin: 1rem;           
+        color:#E7E7E7;
+        background-color:#E7E7E7;
+        box-shadow: 0rem 1rem 1rem #4F4F4F;
+        border-radius: 1rem;
+    }
+
+    .elPapu{                   /*PARA DAR ESTILO A LOS FORMULARIOS*/
+        display: flex;
+        text-align: center;
+        align-content: center;
+        justify-content: center;
+        width: 80%;         /*CAMBIOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO*/
+        margin-left: 1rem;
+        margin-right: 1rem;           
+        color: black;
+        background-color:#E7E7E7;
+        box-shadow: 0rem 1rem 1rem #4F4F4F;
+        border-radius: 1rem;
+    }
+}
+
+.mensajesOKsql{
+    /* PARA DAR FORMATO A LOS MENSAJES EMITIDOS DESDE ARCHIVOS PHP LOGICOS */
+    color: black;
+    padding: 5rem;
+}
+
+.titulosPapus{
+    /* PARA TODOS LOS TITULOS QUE ESTEN SOBRE LOS POPUPS */
+    color:black;
+}
+
+
+.nombrecliente{
+    min-width: 17rem;
+}
+
+#telcliente{
+    min-width: 12rem;
+}
+
+.icontabla{
+    min-width: 6.6rem;
+}
+
+#regresarCli{
+    text-decoration: none;
+}
+
+#facturasClientes{
+    display: flex;
+    justify-content: center;
+}
+
+.inputAncho{
+    min-width: 20rem;
+}
+
+.numerosCasa{
+    min-width: 5rem;
+    max-width: 5rem;
+}
+
+#fechaAncho{
+    max-width: 5rem;
+}
+
+#encabezadoFactura{
+    max-width: 5rem;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+
+.mensajesOKsql{
+    /* PARA DAR FORMATO A LOS MENSAJES EMITIDOS DESDE ARCHIVOS PHP LOGICOS */
+    color: black;
+    padding: 5rem;
+    font-size: 2rem;
+}
+
+
+.actualizarAdmin{                   /*PARA DAR ESTILO A LOS FORMULARIOS*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    margin: 1rem;           
+    color:#E7E7E7;
+    background-color:#E7E7E7;
+    box-shadow: 0rem 1rem 1rem #4F4F4F;
+    border-radius: 1rem;
+    padding: 1rem;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+    animation-duration: 1s;
+}
+
+@media(min-width:768px){
+    .actualizarAdmin{                   /*PARA DAR ESTILO A LOS FORMULARIOS*/
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        width: 50%;
+        margin: 1rem;           
+        color:#E7E7E7;
+        background-color:#E7E7E7;
+        box-shadow: 0rem 1rem 1rem #4F4F4F;
+        border-radius: 1rem;
+    }
+}
+
+
+/* ESTO NO LO TIENE AMOTCITO */
+
+#cancelarRegistro{
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+#nombre-input{
+    min-width: 17.3rem;
+}
+
+/*---------------------------------------------------*/
+.contenido
+{
+    margin: auto;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-rows: 1fr 1fr 1fr;
+    position: absolute;
+    background-size: 100%;
+}
+
+.formulario
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.contenedorForm, .fraccionForm
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fraccionForm h1
+{
+    font-size: 1.7rem;
+    background-color: transparent;
+    color: #FC5757;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.fraccionForm h2
+{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: left;
+    background-color: transparent;
+    color: #4F4F4F;
+    padding: 5px 0px;
+}
+
+input
+{
+    border-width: 2px;
+    border-radius: 6px;
+    font-size: 1.2rem;
+}
+
+
+@media(min-width:768px)
+{
+    .contenido
+    {
+        margin: auto;
+        display: grid;
+        width: 100%;
+        height: 100%;
+        grid-template-rows: 1fr 1fr 1fr;
+        position: absolute;
+        background-size: 25%;
+    }
+
+    input
+    {
+        border-width: 2px;
+        border-radius: 6px;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .formulario
+    {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        flex-grow: 3;
+    }
+    
+}
+
+.mensajesOKsql h1
+{
+    font-size: 3rem;
+    background-color: transparent;
+    color: #FC5757;
+    padding: 1rem;
+}
+
+.mensajesOKsql h2
+{
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+    background-color: transparent;
+    color: #4F4F4F;
+    padding: 1rem;
+}
+
+.mensajesOKsql h3
+{
+    font-size: 2rem;
+    background-color: transparent;
+    color: #4F4F4F;
+    padding: 1rem;
+}
+
+/*-------------------- ESTILOS PARA PAGINA QUE MUESTRA LOS DATOS DEL CLIENTE --------------------*/
+
+.elPapu-datosCliente
+{
+    flex-direction: column;
+}
+
+.datos-cliente
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.datos-cliente h1
+{
+    color: black;
+    background-color: transparent;
+    text-align: left;
+    min-width: 8rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.datos-cliente p
+{
+    font-weight: lighter;
+}

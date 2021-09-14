@@ -1,0 +1,279 @@
+.slider, .sliderRopa /*Estilos para el div que contiene las imagenes desplazables*/
+{
+    width: 95%; /*Espacio-Ancho*/
+    margin: auto; /*Margenes*/
+    overflow: hidden; /*Oculta las imagenes*/
+}
+
+.slide /**Estilos para el div que contiene las imagenes desplazables de la ropa por debajo de la barra de categoria*/
+{
+    width: 50%;
+    margin: 0px 10px 0px 0px;
+    overflow: hidden; /*Oculta las imagenes*/
+}
+
+.slider ul, .slide ul /*Estilos para el ul / el contenedor de la lista de imagenes*/
+{
+    display: flex;
+    padding: 0;
+    width: 400%; /*Espacio-Ancho*/
+
+    animation: cambio; /*Variable para la animación*/
+    animation-duration: 20s; /*Tiempo de la animación*/
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /*Repetición*/
+    animation-timing-function: linear; 
+}
+
+.slider li, .slide li/*Estilos para cada li / etiquetas que conforman la lista de imagenes*/
+{
+    width: 100%; /*Espacio-Ancho*/
+    list-style: none; /*Eslilo de la lista de imagenes*/
+}
+
+.slider img, .slide img/*Estilos para las imagenes que se encuentran dentro de cada etiqueta li*/
+{
+    width: 100%; /*Espacio-Ancho*/
+}
+
+@keyframes cambio /*Administración de la animaión*/
+{
+    0%{margin-left: 0;} /*Desplazamiento de la imagen*/
+    20%{margin-left: 0;} /*Desplazamiento de la imagen*/
+
+    /*Tiempo definido para el cambio de imagen*/
+
+    25%{margin-left: -100%;} /*Desplazamiento de la imagen*/
+    45%{margin-left: -100%;} /*Desplazamiento de la imagen*/
+
+    /*Tiempo definido para el cambio de imagen*/
+
+    50%{margin-left: -200%;} /*Desplazamiento de la imagen*/
+    70%{margin-left: -200%;} /*Desplazamiento de la imagen*/
+
+    /*Tiempo definido para el cambio de imagen*/
+
+    75%{margin-left: -300%;} /*Desplazamiento de la imagen*/
+    100%{margin-left: -300%;} /*Desplazamiento de la imagen*/
+}
+
+
+@media(min-width:768px)
+{
+    .slide /**Estilos para el div que contiene las imagenes desplazables de la ropa por debajo de la barra de categoria*/
+    {
+        width: 25%;
+        margin: 0rem 1rem 0rem 1rem;
+        overflow: hidden; /*Oculta las imagenes*/
+    }
+}
+
+.barraCategorias /*Estilos para la etiqueta div / la barra de Categorias*/
+{
+    background-color: #E7E7E7; /*Color para la barra que contiene las categorias*/
+    width: 100%; /*Espacio-Ancho*/
+}
+
+.contenedorCategorias
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+}
+
+.genero, .contenedorSlideSuperior, .contenedorSlideInferior
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.nombresCategorias, .categorias
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.nombresCategorias
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.categorias
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.tituloCategoria h2
+{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color: #4F4F4F;
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.textoCategoria h2
+{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #4F4F4F;
+    font-family: 'Allura', cursive;
+}
+
+.nombresCategorias form
+{
+    padding: 5px;
+}
+
+.genero div
+{
+    margin: 0rem 2rem 0rem 2rem;
+}
+
+.iconos-genero-mujer, .iconos-genero-hombre
+{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconos-genero-mujer
+{
+    background-color: #FAC6E8;
+}
+
+.iconos-genero-hombre
+{
+    background-color: #B0E1FD;
+}
+
+.iconos-genero-mujer img, .iconos-genero-hombre img
+{
+    width: 4rem;
+}
+
+.iconos-genero-mujer img:hover, .iconos-genero-hombre img:hover
+{
+    width: 3rem;
+}
+.nombresCategorias button
+{
+    display: flex;
+    width: 9rem;
+    height: 2rem;
+    border-radius: 2%;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #C4C3C1;
+    border: transparent;
+}
+
+.nombresCategorias h3
+{
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    color: #4F4F4F;
+}
+
+.divCategoria button:hover
+{
+    background-color: white;
+}
+
+@media(min-width:768px)
+{
+    .contenedorCategorias
+    {
+        padding-bottom: 5px;
+    }
+
+    .genero, .nombresCategorias, .categorias
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .tituloCategoria h2
+    {
+        font-size: 24px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        color: #4F4F4F;
+        margin: 1rem 0rem 0rem 0rem;
+    }
+
+    .textoCategoria h2
+    {
+        font-size: 24px;
+        letter-spacing: 2px;
+        color: #4F4F4F;
+        font-family: 'Allura', cursive;
+    }
+
+    .iconos-genero-mujer, .iconos-genero-hombre
+    {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconos-genero-mujer img, .iconos-genero-hombre img
+    {
+        width: 6rem;
+    }
+
+    .iconos-genero-mujer img:hover, .iconos-genero-hombre img:hover
+    {
+        width: 5rem;
+    }
+
+    .nombresCategorias
+    {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .nombresCategorias form
+    {
+        padding: 1rem;
+    }
+
+    .nombresCategorias button
+    {
+        display: flex;
+        width: 6rem;
+        height: 3rem;
+        border-radius: 7%;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        background-color: #C4C3C1;
+        border: transparent;
+    }
+
+    .nombresCategorias h3
+    {
+        font-size: 12px;
+        letter-spacing: 2px;
+        text-align: center;
+        font-family: 'Open Sans Condensed', sans-serif;
+        text-transform: uppercase;
+        color: #4F4F4F;
+    }
+
+}
